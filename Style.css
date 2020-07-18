@@ -23,5 +23,20 @@ h1 {
 	text-align: center;
 	margin: 7px;
 	font-family: Didot;
+}
 
+.disableButton {
+	background-color: LightPink;
+	text-align: center;
+	margin: 7px;
+	font-family: Didot;
+	border-radius: 8px;
+}
+
+.enableButton {
+	background-color: LightPink;
+	text-align: center;
+	margin: 7px;
+	font-family: Didot;
+	border-radius: 8px;
 }

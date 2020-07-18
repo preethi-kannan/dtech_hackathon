@@ -1,14 +1,12 @@
 
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-
-<link rel="stylesheet" href="/style-sheet.css">
+	<link rel="stylesheet" href="/style-sheet.css">
 	<link rel="stylesheet" href="Style.css">
 	<style>
 		body {
@@ -44,12 +42,17 @@
 	Product description.
 </button>
 <form>
-	<INPUT Type="button" Value="Beauty Bakerie" data-location="https://www.beautybakerie.com/">
+	<INPUT Type="button" Value="Beauty Bakerie" data-location="https://www.beautybakerie.com/" class="buttonItems"> <br>
     <!-- <INPUT Type="btn" Value="Beauty Bakerie" Onclick="window.location.href='https://www.beautybakerie.com/'">  -->
-    <INPUT Type="button" Value="Black Girl Sunscreen" data-location="https://www.blackgirlsunscreen.com/"> 
+    <INPUT Type="button" Value="Black Girl Sunscreen" data-location="https://www.blackgirlsunscreen.com/" class="buttonItems"> <br>
 <form/>
-<script src="/popup.js"></script>
 
+	<button class="disableButton" id="disableButton" style="display:none">Error</button>
+	<br id="br1" style="display:none">
+	<br id="br2" style="display:none">
+
+	<script src="/popup.js"></script>
+	<script src="/Background.js"></script>
 
 </body>
 </html>
