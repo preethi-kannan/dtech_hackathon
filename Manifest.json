@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Dtech Hackathon extension",
+	"version": "1.0",
+
+	"description": "A hello world app", 
+	"icons": {
+		"128": "icon.png"
+	},
+
+	"browser_action": {
+		"default_title": "The best Dtech hackathon project", 
+		"default_popup": "popup.html"
+	}, 
+
+	"permissions": [
+		"http://*/*", 
+		"https://*/*"
+	]
+}
