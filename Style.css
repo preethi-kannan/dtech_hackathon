@@ -1,7 +1,27 @@
 h1 {
-	color: red;
+	color: CornflowerBlue;
+	text-align: center;
+	font-size: 30px;
 }
 
 .h1 {
-	color: blue;
+	color: CornflowerBlue;
+	text-align: center;
+	margin: 7px;
+}
+
+.description{
+	margin: 7px;
+	font-size: 15px;
+	background-color: AliceBlue;
+	border-radius: 8px;
+	font-family: Didot;
+}
+
+.buttonItems {
+	background-color: LightPink;
+	text-align: center;
+	margin: 7px;
+	font-family: Didot;
+
 }
