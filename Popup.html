@@ -1,17 +1,45 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 <link rel="stylesheet" href="/style-sheet.css">
+	<link rel="stylesheet" href="Style.css">
+	<style>
+		body {
+			height: 600px;
+			width: 360px;
+			padding: 0;
+			margin: 0;
+			overflow: scroll;
+			background-color: MistyRose;
+			font-family: Didot;
+		}
+	</style>
 </head>
 <body id="body">
-<h1>Hello World!</h1>
-<button id="btn">Who's the best Dtech Team???</button>
+
+<div class="h1">
+	<img src="icon.png" alt="Extension logo" width="100" height="100">
+	<h1>Extension name</h1>
+</div>
+
+<button class="description">
+	Guess what? <br>
+	You can now easily support some black-owned businesses!
+	We've compiled a list of black-owned businesses that produce similar products! Now
+	you can have more options, find bargains, and support the black community! Take your pick!
+</button>
+
+<div id="suggestion-container"></div>
+
+<button id = "btn" class="buttonItems">
+	Product icon <br>
+	Product description.
+</button>
 <script src="/popup.js"></script>
 </body>
 </html>
