@@ -1,32 +1,11 @@
-
-document.querySelectorAll('button').forEach(button =>
-	button.addEventListener('click', event => {
-        chrome.tabs.create({url: event.target.dataset.location})
-	    // window.location.href = event.target.dataset.location
-	})
-  )
-
-function changeHeaders(businessNames) {
-	document.getElementById("product1").innerHTML = businessNames[0][0]
-	document.getElementById("product2").innerHTML = businessNames[1][0]
-	document.getElementById("product3").innerHTML = businessNames[2][0]
-
-	document.getElementById("product1Description").innerHTML = businessNames[0][1]
-	document.getElementById("product2Description").innerHTML = businessNames[1][1]
-	document.getElementById("product3Description").innerHTML = businessNames[2][1]
-
-	document.getElementById("product1").setAttribute("data-location", businessNames[0][2])
-	document.getElementById("product2").setAttribute("data-location", businessNames[1][2])
-	document.getElementById("product3").setAttribute("data-location", businessNames[2][2])
-}
 https://footnanny.com
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-// import{targetCategory} from './index.js';
-var categrory = "Beauty & Personal Care";																						//how to pull in target category from other window
-var dict = new Map([
+
+var categrory = "jkskd";
+var dict = new Map(
     //BOOKS
     ["Books", ["Eso Won Books", "For Keeps Books", "The Lit. Bar"]], 
     //BEAUTY 
@@ -48,7 +27,7 @@ var dict = new Map([
     //nexth thing in dictionary of health and household
     ["Heath, Household, & BabyCare", ["Vibrant Health", "Jungalow", "Love Notes Fragrances", "McBride Sisters Collection","SustainAble Home Goods","Thrilling",
         //Amazon Home
-        "AptDeco"]]]);
+        "AptDeco"]]);
 
     var listToPromote = [];
     if (dict.has(categrory)){
@@ -71,7 +50,7 @@ var dict = new Map([
     }
     var fs = require('fs');
     var textByLine = fs.readFileSync('Sources.txt').toString().split("\n");
-    var businessNames = [];
+    var links = [];
     // General Code
     function getWebsite(name, description,website) {  
         var names = read("Sources.txt").split("\n");                ///i know that this is incorrect and splitting in the wrong placed
@@ -83,11 +62,40 @@ var dict = new Map([
             if (listToPromote.includes(companyname)){
                 var description = names[i+1];
                 var website = "https://" + names[i+2];
-                businessNames.push([companyname, description,website]);
+                links.push([companyname, description,website]);
             }
             else{
                 continue;
             }
-		}
-		changeHeaders(businessNames);
-	}
+        }
+    }
+    product1 = links[0][0];  
+    product1Description = links[0][1];  
+    data-location == links[0][2]  
+    product2 = links[1][0];  
+    product2description = links[1][1];  
+    data-location == links[1][2]; 
+    product3 =links[2][0];  
+    product3description = links[2][1]; 
+    data-location == links[2][2];
+
+    
+
+        // public class startofsorting{
+        //     public static void main(String[] args){
+        //         String category = "from other file";
+        //         HashMap<String,ArrayList<String>> map = new HashMap<>();
+        
+        
+        //         // BufferedReader bufReader = new BufferedReader(new FileReader("Sources.txt")); 
+        //         // ArrayList<String> listOfLines = new ArrayList<>(); 
+        //         // String line = bufReader.readLine(); 
+        //         // while (line != null) { 
+        //         //     listOfLines.add(line); line = bufReader.readLine(); 
+        //         // } 
+        //         // bufReader.close();
+        //         if dict.has(category){
+        //             dict.get(category);
+        //         }
+                
+        //     }

@@ -17,7 +17,7 @@ function trackWindow() {
 
 	category = getProductCategory(url);
 	
-	if (allCategories.includes(category)) {
+	// if (allCategories.includes(category)) {
 	if (targetButton) {
 		targetButton.addEventListener('click', (e) => {
 			if (active) {
@@ -26,7 +26,6 @@ function trackWindow() {
 			}
 		})
 	}
-}
 }
 
 
@@ -39,6 +38,7 @@ function getProductCategory(url) {
 			return 'categoryNotFound'
 		}
 	}
+		// export {targetCategory};
 		return targetCategory
 	}
 
