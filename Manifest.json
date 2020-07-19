@@ -8,13 +8,28 @@
 		"128": "icon.png"
 	},
 
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["Style.css"], 
+			"js": ["index.js"], 
+			"run_at": "document_end"
+		}
+	],
+
 	"browser_action": {
 		"default_title": "The best Dtech hackathon project", 
-		"default_popup": "popup.html"
+		"default_popup": "Popup.html"
 	}, 
 
 	"permissions": [
-		"http://*/*", 
-		"https://*/*"
+		"tabs", 
+		"activeTab", 
+		"storage"
+	], 
+
+	"web_accessible_resources": [
+		"BusinessesWindow.html",
+		"Business.html"
 	]
 }
