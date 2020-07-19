@@ -12,14 +12,14 @@
 		{
 			"matches": ["<all_urls>"],
 			"css": ["Style.css"], 
-			"js": ["index.js", "js/BusinessesWindow.js"], 
+			"js": ["index.js"], 
 			"run_at": "document_end"
 		}
 	],
 
 	"browser_action": {
 		"default_title": "The best Dtech hackathon project", 
-		"default_popup": "popup.html"
+		"default_popup": "Popup.html"
 	}, 
 
 	"permissions": [
@@ -29,6 +29,7 @@
 	], 
 
 	"web_accessible_resources": [
-		"BusinessesWindow.html"
+		"BusinessesWindow.html",
+		"Business.html"
 	]
 }
